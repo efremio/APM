@@ -3,13 +3,12 @@ import { IProduct } from './product';
 import { ProductService } from './product.service';
 
 @Component({
-    selector: 'pm-products',
     moduleId: module.id,    //if we use module.id we can use relative paths!
     templateUrl: 'product-list.component.html', //relative path
     styleUrls: ['product-list.component.css']
 })
 
-export class ProductListConponent implements OnInit{
+export class ProductListComponent implements OnInit{
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
