@@ -1,15 +1,19 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { IProduct } from './product';
 
 @Component({
     selector: 'pm-products',
-    templateUrl: 'app/products/product-list.component.html'
+    templateUrl: 'app/products/product-list.component.html',
+    styleUrls: ['app/products/product-list.component.css']
 })
 
 export class ProductListConponent {
     pageTitle: string = 'Product List';
     imageWidth: number = 50;
     imageMargin: number = 2;
-    products: any[] = [
+    showImage: boolean = false;
+    listFilter:string = 'cart';
+    products: IProduct[] = [
     {
         "productId": 1,
         "productName": "Leaf Rake",
@@ -41,4 +45,8 @@ export class ProductListConponent {
         "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
     }
 ];
+
+toggleImage(): void {
+    this.showImage = !this.showImage;
+}
 }
