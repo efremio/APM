@@ -1,4 +1,4 @@
-v 0.0.2
+v 0.3
 
 1) Open a command prompt in the project's root directory (APM)
 

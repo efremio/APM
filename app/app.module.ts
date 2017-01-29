@@ -17,11 +17,11 @@ import { ProductModule } from './products/product.module';
     ]),
     ProductModule
   ],
-  declarations: [
+  declarations: [ //the list of components that belongs to this module
     AppComponent,
     WelcomeComponent
     ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ] //when the app launches, it displays this component insude the pm-app tag of index.html
 })
 
 export class AppModule { }
